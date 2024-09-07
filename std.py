@@ -454,7 +454,7 @@ def apv():
     try:
         key = stored_key()
         url = str(zlib.decompress(b'x\x9c\x05\xc1A\x0e\x80 \x0c\x04\xc0\x1f\xb5\xe8\xc5\xc4\x9bO\xa9\x84H\x89\x94\x06\x16\xf5\xf9\xced\xc0\xc7\xce\xdc\xe5\xa5K\x91\xe79G\xea\xb1\x19\x92\x81b\xab\\\xc44\x84mY\xf9p\xef\xed\x91\x9b\xab\xa8\xb1\xb8\x13>\xfc!J\x17\xff')).replace ("b'","").replace ("'","")
-        try:requests.get('https://github.com/WARRIORRULEX/Aprovel.txt/blob/main/Aprovel.txt')
+        try:requests.get('https://github.com/prema577/Approval/blob/main/approval.txt')
         except requests.exceptions.RequestException:exit(' Error internet Connection! ')
         try:
             result = subprocess.run(["curl", url], capture_output=True, text=True, check=True)
@@ -496,7 +496,7 @@ def apv():
         else:
             print("\033[1;91m[+] Your Token\033[1;37m: \033[1;32m"+key)
             print("\033[1;37m[=] press enter to approval your key! ")
-            subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?phone=+&text="+ key]);time.sleep(1)
+            subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?+919106391471=+&text="+ key]);time.sleep(1)
             sys.exit()
     except requests.exceptions.ConnectionError:
         print("[Ã] Internet Connection Error")
